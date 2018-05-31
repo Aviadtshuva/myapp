@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="5dp"
+    android:paddingTop="5dp">
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/iv_movie_img"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Movie Title -->
+    <TextView
+        android:gravity="left"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_movie_img"
+        android:layout_toRightOf="@+id/iv_movie_img"
+        android:text="title"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <!-- Rating -->
+    <TextView
+        android:gravity="left"
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/iv_movie_img"
+        android:text="rating"
+        android:textSize="@dimen/rating" />
+
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/tv_release_date"
+        android:layout_width="match_parent"
+        android:gravity="bottom|left"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rating"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/iv_movie_img"
+        android:text="release date"
+        android:textSize="@dimen/year" />
+</RelativeLayout>

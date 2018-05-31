@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.2"
+                android:gravity="start|center"
+                android:text="@string/subject"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/et_movie_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/tv_subject"
+                android:layout_weight="0.8"
+                android:background="@drawable/bg_border"
+                android:gravity="start|center"
+                android:imeOptions="flagNoExtractUi"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rating_release"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/ll_title"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="start"
+                    android:text="@string/rating"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <EditText
+                    android:id="@+id/et_movie_rating"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="start"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:imeOptions="flagNoExtractUi"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="start"
+                    android:text="@string/release_date"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <EditText
+                    android:id="@+id/et_movie_release_date"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:imeOptions="flagNoExtractUi"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_body"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/ll_rating_release"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.1"
+                android:text="@string/body" />
+
+            <EditText
+                android:id="@+id/et_movie_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/bg_border"
+                android:gravity="start|top"
+                android:hint="@string/insert_movie_description"
+                android:imeOptions="flagNoExtractUi"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_url"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ll_body"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="@string/url" />
+
+            <EditText
+                android:id="@+id/et_movie_image_url"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/bg_border"
+                android:hint="@string/insert_movie_image_url"
+                android:imeOptions="flagNoExtractUi"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <Button
+                android:id="@+id/btn_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/button_click"
+                android:gravity="center"
+                android:text="@string/show"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/ll_url"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/iv_movie_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.55"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_actions"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ll_image"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/button_click"
+                android:text="@string/save"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/button_click"
+                android:text="@string/cancel"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

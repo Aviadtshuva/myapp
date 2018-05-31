@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TMDB App</string>
+
+    <string name="exit">Exit</string>
+    <string name="delete_all_items">Delete All Items</string>
+    <string name="add">Add</string>
+
+    <string name="add_new_movie">Add New Movie</string>
+    <string name="select_to_insert_manually_or_from_the_TMDB_API">Select to insert manually or from the TMDB API</string>
+    <string name="manually">Manually</string>
+    <string name="tmdb_api">TMDB API</string>
+
+    <string name="subject">Subject:</string>
+    <string name="insert_movie_title">Insert movie title</string>
+    <string name="body">Body:</string>
+    <string name="insert_movie_description">Insert movie description (optional)</string>
+    <string name="url">URL</string>
+    <string name="show">Show</string>
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="insert_movie_image_url">Insert image URL (optional)</string>
+
+    <string name="insert_content_to_search_in_tmdb">Insert content to search in TMDB</string>
+    <string name="search">Search:</string>
+    <string name="go">Go</string>
+    <string name="rating">Rating</string>
+    <string name="release_date">Release Date</string>
+</resources>
